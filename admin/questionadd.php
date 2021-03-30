@@ -72,7 +72,7 @@ return true;
   <table class="table table-striped">
     <tr>
       <td width="24%" height="32"><div align="left"><strong>Select Test Name </strong></div></td>
-      <td width="1%" height="5">  
+      <td width="1%" height="5">
       <td width="75%" height="32"><select class="form-control" name="testid" id="testid">
 <?php
 $rs=mysqli_query($con,"Select * from mst_test order by test_name",$cn);
@@ -89,7 +89,7 @@ echo "<option value='$row[0]'>$row[2]</option>";
 }
 ?>
       </select>
-        
+
     <tr>
         <td height="26"><div align="left"><strong> Enter Question </strong></div></td>
         <td>&nbsp;</td>

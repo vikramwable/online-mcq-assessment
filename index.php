@@ -48,30 +48,11 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 }?>
 
 <table width="100%" border="0">
-
   <tr>
-    <!-- <td height="296" valign="top"><div align="center"> -->
-        <!-- <h1 class="style8">Welcome to Online Quiz</h1> -->
-      <!-- <span class="style5"><img src="image/paathshala.jpg" width="129" height="100"><span class="style7"><img src="image/HLPBUTT2.JPG" width="50" height="50"><img src="image/BOOKPG.JPG" width="43" height="43"></span>        </span> -->
-        <!-- <param name="movie" value="english theams two brothers.dat"> -->
-        <!-- <param name="quality" value="high"> -->
-        <!-- <param name="movie" value="Drag to a file to choose it."> -->
-        <!-- <param name="quality" value="high"> -->
-        <!-- <param name="BGCOLOR" value="#FFFFFF"> -->
-<!-- <p align="left" class="style5">&nbsp;</p> -->
-      <!-- <blockquote>
-          <p align="left" class="style5"><span class="style7">WelCome to Online
-            exam. This Site will provide the quiz for various subject of interest.
-            You need to login for the take the online exam.</span></p>
-      </blockquote> -->
-    <!-- </div></td> -->
-    		<table align="center" border="0" WIDTH="50%" height="250">
-			<!-- <h1 class="text-center bg-warning">LOGIN PAGE</h1> -->
+    		<table align="center" border="0" WIDTH="30%" height="250">
 		<form method="post" action="">
 		<center>
-		<!-- <img class="img-circle" src="1.jpg"  title="this is my profile pic" width="240px" height="190px" border="1" /> -->
 		</center>	<br>
-
 				<tr>
 					<th class="text-primary">LOGIN ID</th>
 					<th>
@@ -92,11 +73,8 @@ echo "<h1 class='text-center bg-danger'>Welcome to Online Exam</h1>";
 				<th class="errors">
 					<input class="btn btn-danger "type="submit" name="submit" id="submit" Value="Login"/>
 
-        <a class="btn btn-success " href="signup.php">New user ? click here</a></th>
+        <a class="btn btn-success " href="signup.php">Register here</a></th>
       </table>
-      <!-- <div align="center">
-        <p class="style5"><img src="images/topleft.jpg" width="134" height="128">          </p>
-        </div> -->
     </form></td>
   </tr>
 </table>

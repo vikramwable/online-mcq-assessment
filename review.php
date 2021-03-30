@@ -31,24 +31,24 @@ if(!isset($_SESSION[qn]))
 else if($submit=='Next Question' )
 {
 	$_SESSION[qn]=$_SESSION[qn]+1;
-	
 }
 
 $rs=mysqli_query($con,"select * from mst_useranswer where sess_id='" . session_id() ."'",$cn) or die(mysqli_error());
+
 mysqli_data_seek($rs,$_SESSION[qn]);
 $row= mysqli_fetch_row($rs);
 echo "<form name=myfm method=post action=review.php>";
 echo "<table width=100%> <tr> <td width=30>&nbsp;<td> <table border=0>";
 $n=$_SESSION[qn]+1;
-echo "<tR><td><span class=style2>Que ".  $n .": $row[2]</style>";
+echo "<tR><td><pre><span class=style2>Question ".  $n .": $row[2]</style>";
 echo "<tr><td class=".($row[7]==1?'tans':'style8').">$row[3]";
 echo "<tr><td class=".($row[7]==2?'tans':'style8').">$row[4]";
 echo "<tr><td class=".($row[7]==3?'tans':'style8').">$row[5]";
 echo "<tr><td class=".($row[7]==4?'tans':'style8').">$row[6]";
-if($_SESSION[qn]<mysqli_num_rows($rs)-1)
-echo "<tr><td><input type=submit name=submit value='Next Question'></form>";
+if($_SESSION[qn] < mysqli_num_rows($rs)-1)
+echo "<tr><td><input type=submit name=submit value='Next Question' style='background-color: #b1b2b68c;padding: 10px 30px;border-radius: 15px;margin-top: 20px;border: 1px solid;outline: none;'></form>";
 else
-echo "<tr><td><input type=submit name=submit value='Finish'></form>";
+echo "<tr><td><input type=submit name=submit value='Finish' style='background-color: #b1b2b68c;padding: 10px 30px;border-radius: 15px;margin-top: 20px;border: 1px solid;outline: none;'></form>";
 
 echo "</table></table>";
 ?>
